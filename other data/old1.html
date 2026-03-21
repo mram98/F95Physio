@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Nunito:wght@300;400;500;600;700&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 <!-- Swiper.js — professional carousel library, zero dependencies -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
-<link rel="stylesheet" href="indexStyle.css">
+<link rel="stylesheet" href="old1.css">
 
 </head>
 <body>
@@ -31,12 +31,12 @@
 
     <ul class="nav-links">
       <li><a href="index.html"        class="active">Home</a></li>
-      <li><a href="about.html">About</a></li>
       <li><a href="diagnostics.html">Diagnostics</a></li>
-      <li><a href="services.html">Services</a></li>      
+      <li><a href="services.html">Services</a></li>
+      <li><a href="about.html">About</a></li>
       <li><a href="gallery.html">Gallery</a></li>
       <li><a href="faq.html">FAQ</a></li>
-      <!--<li><a href="contact.html">Contact Us</a></li>-->
+      <li><a href="contact.html">Contact Us</a></li>
     </ul>
 
     <div class="nav-right">
@@ -61,73 +61,65 @@
   <a href="contact.html" class="mob-contact-btn">Contact Us</a>
 </div>
 
-
-
-
-
 <!-- ════════════════════════════════════════
-     HERO — Cinematic Photo Carousel
-     Swap Unsplash URLs for final client photos.
-     object-position: center top keeps the key
-     clinical subject in frame at every height.
+     HERO — Fullscreen Landscape Carousel
+     Place hero1.jpg, hero2.jpg, hero3.jpg
+     in the same folder as index.html.
+     Images use object-fit: contain — they
+     will NEVER be cropped or stretched.
 ════════════════════════════════════════ -->
 <section id="hero">
   <div class="hero-swiper-wrap">
     <div class="swiper hero-swiper">
       <div class="swiper-wrapper">
 
-        <!-- ── Slide 1: Modern Clinic / Lab ── -->
+        <!-- Slide 1 -->
         <div class="swiper-slide">
-          <img
-            src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop"
-            alt="F95 Advance Physiotherapy — AI-Driven Clinical Environment"
-            class="slide-img"
-            loading="eager"
-            fetchpriority="high"
-          >
+          <!-- Once you have the real photo, replace the placeholder div with:
+               <img src="hero1.jpg" alt="F95 Physiotherapy — AI Movement Analysis" class="slide-img"> -->
+          <div class="slide-placeholder">
+            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1920&q=80" alt="F95 Clinic"" alt="F95 Physiotherapy — AI Movement Analysis" class="slide-img">
+            <span>hero1.jpg · Landscape photo here</span>
+          </div>
           <div class="slide-overlay"></div>
           <div class="slide-caption">
-            <div class="slide-eyebrow">AI-Driven Root Cause Analysis</div>
+            <div class="slide-eyebrow">AI-Driven Diagnostics</div>
             <h2>Move Better. Live Better.<br>Without Guesswork.</h2>
-            <p>India's most advanced physiotherapy network — diagnosing the root cause before we treat. No guesswork. Just results.</p>
+            <p>India's leading physiotherapy network — diagnosing the root cause before we treat.</p>
           </div>
         </div>
 
-        <!-- ── Slide 2: Physiotherapy Equipment / Session ── -->
+        <!-- Slide 2 -->
         <div class="swiper-slide">
-          <img
-            src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop"
-            alt="F95 Advance Physiotherapy — Expert Clinical Sessions"
-            class="slide-img"
-            loading="lazy"
-          >
+          <div class="slide-placeholder">
+            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1920&q=80" alt="F95 Clinic"" alt="F95 Physiotherapy — AI Movement Analysis" class="slide-img">
+            <span>hero2.jpg · Landscape photo here</span>
+          </div>
           <div class="slide-overlay"></div>
           <div class="slide-caption">
-            <div class="slide-eyebrow">290+ Daily Sessions · 60+ Experts</div>
-            <h2>Chhattisgarh's Most Trusted<br>Physiotherapy Network.</h2>
-            <p>25,000+ lives impacted quarterly across 12+ centres — serving patients, plant workers and elite athletes.</p>
+            <div class="slide-eyebrow">25,000+ Lives Impacted</div>
+            <h2>Chhattisgarh's Most<br>Comprehensive Physio Network.</h2>
+            <p>290+ daily sessions across 12+ centres — serving patients, plant workers and athletes.</p>
           </div>
         </div>
 
-        <!-- ── Slide 3: Placeholder for client photo ──
-             Replace src with client's own image: hero3.jpg  -->
+        <!-- Slide 3 -->
         <div class="swiper-slide">
-          <img
-            src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=2070&auto=format&fit=crop"
-            alt="F95 Advance Physiotherapy — Advanced Recovery Technologies"
-            class="slide-img"
-            loading="lazy"
-          >
+          <div class="slide-placeholder">
+            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1920&q=80" alt="F95 Clinic"" alt="F95 Physiotherapy — AI Movement Analysis" class="slide-img">
+            <span>hero3.jpg · Landscape photo here</span>
+          </div>
           <div class="slide-overlay"></div>
           <div class="slide-caption">
-            <div class="slide-eyebrow">Whole Body Cryotherapy &amp; More</div>
+            <div class="slide-eyebrow">Whole Body Cryotherapy & More</div>
             <h2>Advanced Recovery.<br>Evidence-Based Results.</h2>
-            <p>From cryotherapy chambers to AI movement analysis — world-class technology now available in Central India.</p>
+            <p>From cryotherapy chambers to hydrotherapy pools — we bring world-class tech to Central India.</p>
           </div>
         </div>
 
       </div><!-- /swiper-wrapper -->
 
+      <!-- Controls -->
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
       <div class="swiper-pagination"></div>
@@ -603,9 +595,9 @@
         <div class="footer-col-title">Pages</div>
         <ul class="footer-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
           <li><a href="diagnostics.html">Diagnostics</a></li>
-          <li><a href="services.html">Services</a></li>          
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About Us</a></li>
           <li><a href="gallery.html">Gallery</a></li>
           <li><a href="faq.html">FAQ</a></li>
         </ul>
@@ -656,6 +648,6 @@
      SCRIPTS
 ════════════════════════════════════════ -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
-<script src="indexScript.js"></script>
+<script src="/indexScript.js"></script>
 </body>
 </html>
