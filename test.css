@@ -1554,6 +1554,8 @@ footer {
   background-repeat: no-repeat;
   background-color: transparent; /* remove the black/green bg since logo has its own */
 }
+
+
 /*
 .footer-logo-circle {
   width: 48px;
@@ -1567,6 +1569,7 @@ footer {
   flex-shrink: 0;
 }
   */
+  
 
 .footer-logo-f95 {
   font-family: 'Nunito', sans-serif;
@@ -1695,6 +1698,7 @@ footer {
   border-radius: var(--radius);
   border: 1px solid rgba(0, 174, 239, 0.2);
 }
+  
 
 .footer-contact-block .partner-label {
   font-size: 0.68rem;
