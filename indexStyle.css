@@ -218,15 +218,20 @@ nav.scrolled {
 }
 
 .logo-circle {
-  width: 65px; height: 65px; border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
   flex-shrink: 0;
-  
+
   overflow: hidden;
   background-image: url('/Images/f95-logo.png');
-  background-size: 200%;        /* zoom level — adjust this */
-  background-position: center;  /* keeps it centered */
+  background-size: 200%;
+  /* zoom level — adjust this */
+  background-position: center;
+  /* keeps it centered */
   background-repeat: no-repeat;
-  background-color: transparent; /* remove the black/green bg since logo has its own */
+  background-color: transparent;
+  /* remove the black/green bg since logo has its own */
 }
 
 /* 
@@ -248,8 +253,8 @@ nav.scrolled {
 
 .logo-circle img {
   width: 190%;
-    height: 190%;
-    object-fit: contain;
+  height: 190%;
+  object-fit: contain;
 }
 
 
@@ -260,10 +265,8 @@ nav.scrolled {
   line-height: 1;
   letter-spacing: -1px;
   display: flex;
-  align-items: baseline;  
+  align-items: baseline;
 }
-
-
 
 .logo-f {
   color: #FFFFFF;
@@ -283,7 +286,6 @@ nav.scrolled {
   margin-top: 1px;
   font-style: italic;
 }
-
 
 .logo-text-block {
   display: flex;
@@ -342,21 +344,26 @@ nav.scrolled {
   gap: 14px;
 }
 
+/* Updated wrapper (removed text styles) */
 .hira-badge-nav {
   display: flex;
   align-items: center;
-  gap: 5px;
-  font-family: 'Nunito', sans-serif;
-  font-size: 0.6rem;
-  font-weight: 800;
-  color: var(--gray-mid);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  /* Optional: add a small padding or border here if you want separation from the contact button */
+  margin-right: 8px;
 }
 
-.hira-badge-nav span {
-  color: #CC0000;
+/* New class to size the logo properly */
+.hira-nav-logo {
+  height: 38px;
+  /* Adjust this number to make the logo larger or smaller */
+  width: auto;
+  object-fit: contain;
+  display: block;
 }
+
+/* You can safely delete the old .hira-badge-nav span { color: #CC0000; } rule */
+
+
 
 .nav-contact-btn {
   background: var(--blue);
@@ -1544,16 +1551,22 @@ footer {
 }
 
 .footer-logo-circle {
-  width: 65px; height: 65px; border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
   flex-shrink: 0;
-  
+
   overflow: hidden;
   background-image: url('/Images/f95-logo.png');
-  background-size: 200%;        /* zoom level — adjust this */
-  background-position: center;  /* keeps it centered */
+  background-size: 200%;
+  /* zoom level — adjust this */
+  background-position: center;
+  /* keeps it centered */
   background-repeat: no-repeat;
-  background-color: transparent; /* remove the black/green bg since logo has its own */
+  background-color: transparent;
+  /* remove the black/green bg since logo has its own */
 }
+
 /*
 .footer-logo-circle {
   width: 48px;
@@ -1647,19 +1660,24 @@ footer {
 .footer-contact-block {
   display: flex;
   align-items: center;
-  gap: 10px; /* Space between the text and the logo */
+  gap: 10px;
+  /* Space between the text and the logo */
   flex-wrap: wrap;
 }
 
 .partner-logo {
-  height: 40px; /* Adjust this height to fit your design */
-  width: auto;  /* Keeps the aspect ratio perfect */
+  height: 40px;
+  /* Adjust this height to fit your design */
+  width: auto;
+  /* Keeps the aspect ratio perfect */
   display: inline-block;
   vertical-align: middle;
 }
+
 .partner-section {
   display: flex;
-  flex-direction: column; /* Puts logo under the text for better visibility */
+  flex-direction: column;
+  /* Puts logo under the text for better visibility */
   align-items: center;
   gap: 12px;
   margin-top: 20px;
@@ -1673,17 +1691,19 @@ footer {
 }
 
 .partner-logo-container {
-  background: white; /* Adds a clean white card behind the logo */
+  background: white;
+  /* Adds a clean white card behind the logo */
   padding: 10px 20px;
   border-radius: 8px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .partner-logo {
-  height: 60px; /* Increased height for better clarity */
+  height: 60px;
+  /* Increased height for better clarity */
   width: auto;
   display: block;
 }
