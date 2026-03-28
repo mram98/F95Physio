@@ -27,7 +27,7 @@ jobs:
 
       - name: Inject Secret into JS
         run: |
-          sed -i "s/__MY_SECRET_PLACEHOLDER__/${{ secrets.MY_SECRET_TOKEN }}/g" script/dataPost.js
+          sed -i "s/__SECRET_TOKEN_PLACEHOLDER__/${{ secrets.MY_SECRET_TOKEN }}/g" script/dataPost.js
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
