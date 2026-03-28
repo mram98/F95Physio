@@ -3,7 +3,7 @@
 const scriptURL = 'https://script.google.com/macros/s/AKfycbyU-7mlxZr187kpcjupR6PdcDQwJGhJN4QYQ98hNOkkY4QTz2WOCRZctaDjWH68KbPq/exec';
 
 // This MUST match the SECRET_TOKEN variable in your Google Apps Script
-const SECRET_TOKEN = "BranchContactForm_2026_Secure"; 
+const SECRET_TOKEN = "__SECRET_TOKEN_PLACEHOLDER__";
 
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('contact-form');
