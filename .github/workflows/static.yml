@@ -41,3 +41,15 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
+
+        - name: Checkout
+        uses: actions/checkout@v4
+
+      # --- INSERT THIS START ---
+      - name: Inject Secret into JS
+        run: |
+          sed -i "s/__MY_SECRET_PLACEHOLDER__/${{ secrets.MY_SECRET_TOKEN }}/g" script/dataPost.js
+      # --- INSERT THIS END ---
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
