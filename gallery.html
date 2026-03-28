@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | F95 Advance Physiotherapy & Research Centre</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Nunito:wght@300;400;500;600;700&family=Nunito+Sans:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <!-- Swiper.js — professional carousel library, zero dependencies -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+  <link rel="stylesheet" href="indexStyle.css">
+  <!-- Standard Footer: Social Media Component (separate file for easy maintenance) -->
+  <link rel="stylesheet" href="footer.css">
+  <!-- Facicons : Icons for apple, android and web devices along with web-manifest file -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/Images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/Images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/Images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/Images/favicon/site.webmanifest">
+  <!-- Standard Preloader: Preloader Animation 2 Seconds Delay (separate file for easy maintenance) -->
+  <link rel="stylesheet" href="preloader.css">
+  <!-- Specific CSS design for the Gallery page -->
+  <link rel="stylesheet" href="/Style/galleryStyle.css">
+</head>
+
+<body>
+    <!-- ════════════════════════════════════════
+    PRELOADER — Starting Co-centric Animation
+════════════════════════════════════════ -->
+  <div id="preloader">
+    <div class="f95-loader-container">
+      <div class="f95-circle"></div>
+      <div class="f95-circle"></div>
+      <div class="f95-circle"></div>
+      <div class="loader-center">F95</div>
+    </div>
+    <p class="loader-text">Finding the root cause...</p>
+  </div>
+
+  <!-- ════════════════════════════════════════
+     NAVIGATION — identical to index.html
+  ════════════════════════════════════════ -->
+  <nav id="mainNav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo-wrap">
+        <div class="logo-circle"></div>
+        <div class="logo-text-block">
+          <div class="logo-name">F95 Advance Physiotherapy <br>&amp; Research Centre</div>
+          <div class="logo-sub">Keeps you Moving</div>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="analysis.html">Analysis</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <div class="hira-badge-nav">
+          <img src="/Images/hira-csr-logo.png" alt="HIRA CSR Foundation" class="hira-nav-logo">
+        </div>
+        <a href="contact.html" class="nav-contact-btn">Contact Us</a>
+        <button class="nav-hamburger" id="hamburgerBtn" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <div class="mobile-nav-drawer" id="mobileDrawer">
+    <a href="index.html">Home</a>
+    <a href="analysis.html">Analysis</a>
+    <a href="service.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="contact.html" class="mob-contact-btn">Contact Us</a>
+  </div>
+
+  <!-- ════════════════════════════════════════
+     HERO — Cinematic Photo Carousel
+  ════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-swiper-wrap">
+      <div class="swiper hero-swiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?q=80&w=2091&auto=format&fit=crop"
+              alt="F95 Gallery — Clinical Excellence" class="slide-img" loading="eager" fetchpriority="high">
+            <div class="slide-overlay"></div>
+            <div class="slide-caption">
+              <div class="slide-eyebrow">Visual Moments · Our Story</div>
+              <h2>Our Gallery of<br>Care &amp; Community.</h2>
+              <p>Moments captured across camps, workshops, and clinical sessions — the human side of F95.</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop"
+              alt="F95 Gallery — Expert Sessions" class="slide-img" loading="lazy">
+            <div class="slide-overlay"></div>
+            <div class="slide-caption">
+              <div class="slide-eyebrow">Events · Workshops · Outreach</div>
+              <h2>Where Science Meets<br>Compassion.</h2>
+              <p>From community health drives to elite sports rehab — every photo tells a story of transformation.</p>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=2070&auto=format&fit=crop"
+              alt="F95 Gallery — Advanced Recovery" class="slide-img" loading="lazy">
+            <div class="slide-overlay"></div>
+            <div class="slide-caption">
+              <div class="slide-eyebrow">25,000+ Lives Impacted</div>
+              <h2>Behind Every Photo,<br>A Life Transformed.</h2>
+              <p>Browse our growing archive of milestones, community service, and clinical innovation.</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+     QUICK LINKS — pill buttons for each event
+  ════════════════════════════════════════ -->
+  <div id="gallery-quicklinks">
+    <div class="quicklinks-inner">
+      <span class="quicklinks-label">Jump to:</span>
+      <div class="quicklinks-pills">
+        <a href="#event-1" class="quicklink-pill active" data-target="event-1">
+          <span class="pill-dot"></span>Annual Awareness Camp
+        </a>
+        <a href="#event-2" class="quicklink-pill" data-target="event-2">
+          <span class="pill-dot"></span>HIRA Health Drive
+        </a>
+        <a href="#event-3" class="quicklink-pill" data-target="event-3">
+          <span class="pill-dot"></span>Sports Rehab Workshop
+        </a>
+        <a href="#event-4" class="quicklink-pill" data-target="event-4">
+          <span class="pill-dot"></span>AI Analysis Launch
+        </a>
+        <a href="#event-5" class="quicklink-pill" data-target="event-5">
+          <span class="pill-dot"></span>Community Outreach
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════
+     MAIN GALLERY LAYOUT — Full-width, single column
+  ════════════════════════════════════════ -->
+  <div id="gallery-layout">
+    <main id="gallery-main">
+
+      <!-- ═══════════════════
+         EVENT 1
+      ═══════════════════ -->
+      <section class="gallery-event reveal" id="event-1" data-event="event-1">
+
+        <div class="event-header glass-header">
+          <div class="event-header-inner">
+            <div class="event-meta">
+              <span class="event-tag">Event 01</span>
+              <span class="event-year">2024</span>
+            </div>
+            <h2 class="event-title">Annual Physiotherapy Awareness Camp</h2>
+            <p class="event-desc">A landmark community health initiative providing free screenings, gait analysis, and posture assessments to over 500 residents across Raipur.</p>
+            <div class="event-stats">
+              <div class="event-stat"><strong>500+</strong> Patients Screened</div>
+              <div class="event-stat-sep"></div>
+              <div class="event-stat"><strong>8</strong> Expert Therapists</div>
+              <div class="event-stat-sep"></div>
+              <div class="event-stat"><strong>1</strong> Day Camp</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-grid">
+
+          <div class="gallery-item gallery-item--wide">
+            <div class="skeleton-box"></div>
+            <img
+              data-src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?q=80&w=800&auto=format&fit=crop"
+              alt="Expert physiotherapist conducting posture assessment at awareness camp"
+              class="gallery-img lazy">
+            <div class="gallery-overlay">
+              <p>Expert physiotherapist conducting detailed posture assessment for patient.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="skeleton-box"></div>
+            <img
+              data-src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=800&auto=format&fit=crop"
+              alt="Free gait analysis session during the community awareness camp"
+              class="gallery-img lazy">
+            <div class="gallery-overlay">
+              <p>Free gait analysis session helping community members understand movement patterns.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="skeleton-box"></div>
+            <img
+              data-src="https://images.unsplash.com/photo-1559757175-5700dde675bc?q=80&w=800&auto=format&fit=crop"
+              alt="Therapist educating patients about spinal health at the camp"
+              class="gallery-img lazy">
+            <div class="gallery-overlay">
+              <p>Clinical team educating the public about spinal health and pain prevention.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="skeleton-box"></div>
+            <img
+              data-src="https://images.pexels.com/photos/6111604/pexels-photo-6111604.jpeg"
+              alt="Group exercise and rehabilitation demonstration for camp attendees"
+              class="gallery-img lazy">
+            <div class="gallery-overlay">
+              <p>Live demonstration of therapeutic exercises drawing a large engaged audience.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="skeleton-box"></div>
+            <img
+              data-src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=800&auto=format&fit=crop"
+              alt="F95 clinical team at the annual awareness camp 2024"
+              class="gallery-img lazy">
+            <div class="gallery-overlay">
+              <p>F95's dedicated clinical team after a successful community awareness day.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="skeleton-box"></div>
+            <img
+              data-src="https://images.pexels.com/photos/5794011/pexels-photo-5794011.jpeg"
+              alt="Foot pressure analysis being demonstrated live at the camp"
+              class="gallery-img lazy">
+            <div class="gallery-overlay">
+              <p>Live foot pressure analysis revealing hidden biomechanical imbalances in attendees.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item gallery-item--wide">
+            <div class="skeleton-box"></div>
+            <img
+              data-src="https://images.unsplash.com/photo-1582719508461-905c673771fd?q=80&w=1200&auto=format&fit=crop"
+              alt="Mass crowd attending F95 annual physiotherapy awareness camp 2024"
+              class="gallery-img lazy">
+            <div class="gallery-overlay">
+              <p>Hundreds of community members attended our signature annual awareness camp event.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="skeleton-box"></div>
+            <img
+              data-src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?q=80&w=800&auto=format&fit=crop"
+              alt="Children receiving pediatric physiotherapy screening at the camp"
+              class="gallery-img lazy">
+            <div class="gallery-overlay">
+              <p>Children receiving free pediatric physiotherapy screening from specialist therapists.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ═══════════════════
+         EVENT 2
+      ═══════════════════ -->
+      <section class="gallery-event reveal" id="event-2" data-event="event-2">
+        <div class="event-header glass-header">
+          <div class="event-header-inner">
+            <div class="event-meta">
+              <span class="event-tag">Event 02</span>
+              <span class="event-year">2024</span>
+            </div>
+            <h2 class="event-title">HIRA CSR Foundation Health Drive</h2>
+            <p class="event-desc">A large-scale industrial health outreach programme serving plant workers at GPIL, SEML, and Hira Power — bringing physiotherapy care directly to the workforce.</p>
+            <div class="event-stats">
+              <div class="event-stat"><strong>1,200+</strong> Workers Served</div>
+              <div class="event-stat-sep"></div>
+              <div class="event-stat"><strong>3</strong> Plants Covered</div>
+              <div class="event-stat-sep"></div>
+              <div class="event-stat"><strong>2</strong> Day Drive</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-grid">
+
+          <div class="gallery-item">
+            <div class="skeleton-box"></div>
+            <img
+              data-src="https://images.unsplash.com/photo-1504813184591-01572f98c85f?q=80&w=800&auto=format&fit=crop"
+              alt="HIRA CSR Health Drive at industrial plant for worker wellness"
+              class="gallery-img lazy">
+            <div class="gallery-overlay">
+              <p>F95 team conducting occupational health screenings for industrial plant workers.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item gallery-item--tall">
+            <div class="skeleton-box"></div>
+            <img
+              data-src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?q=80&w=800&auto=format&fit=crop"
+              alt="Physiotherapist performing ergonomic assessment for factory worker"
+              class="gallery-img lazy">
+            <div class="gallery-overlay">
+              <p>Ergonomic assessment helping factory workers understand proper workstation posture.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="skeleton-box"></div>
+            <img
+              data-src="https://images.unsplash.com/photo-1666214280391-8ff5bd3c0bf0?q=80&w=800&auto=format&fit=crop"
+              alt="Medical consultation during HIRA CSR health drive at plant"
+              class="gallery-img lazy">
+            <div class="gallery-overlay">
+              <p>One-on-one clinical consultations provided free to all participating plant workers.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="skeleton-box"></div>
+            <img
+              data-src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=800&auto=format&fit=crop"
+              alt="Group musculoskeletal screening session at HIRA industrial health drive"
+              class="gallery-img lazy">
+            <div class="gallery-overlay">
+              <p>Group musculoskeletal screening identifying chronic pain patterns in plant workers.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item gallery-item--wide">
+            <div class="skeleton-box"></div>
+            <img
+              data-src="https://images.pexels.com/photos/5794009/pexels-photo-5794009.jpeg"
+              alt="Full F95 team and HIRA CSR representatives at health drive"
+              class="gallery-img lazy">
+            <div class="gallery-overlay">
+              <p>The complete F95 and HIRA CSR team at the conclusion of a successful health drive.</p>
+            </div>
+          </div>
+
+          <!-- -->
+          <div class="gallery-item">
+            <div class="skeleton-box"></div>
+            <img
+              data-src="https://images.pexels.com/photos/4506112/pexels-photo-4506112.jpeg"
+              alt="Workers receiving therapeutic exercise guidance from F95 physiotherapist"
+              class="gallery-img lazy">
+            <div class="gallery-overlay">
+              <p>Workers learning therapeutic stretching routines to prevent occupational injuries daily.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ═══════════════════
+         EVENT 3
+      ═══════════════════ -->
+      <section class="gallery-event reveal" id="event-3" data-event="event-3">
+        <div class="event-header glass-header">
+          <div class="event-header-inner">
+            <div class="event-meta">
+              <span class="event-tag">Event 03</span>
+              <span class="event-year">2025</span>
+            </div>
+            <h2 class="event-title">Sports Rehabilitation Workshop 2025</h2>
+            <p class="event-desc">An intensive workshop for coaches, athletes, and trainers from academies across Chhattisgarh — covering injury prevention, performance screening, and return-to-play protocols.</p>
+            <div class="event-stats">
+              <div class="event-stat"><strong>80+</strong> Athletes</div>
+              <div class="event-stat-sep"></div>
+              <div class="event-stat"><strong>6</strong> Academies</div>
+              <div class="event-stat-sep"></div>
+              <div class="event-stat"><strong>Full Day</strong> Event</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-grid">
+
+          <div class="gallery-item gallery-item--wide">
+            <div class="skeleton-box"></div>
+            <img
+              data-src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1200&auto=format&fit=crop"
+              alt="Athletes attending sports rehabilitation workshop at F95 centre"
+              class="gallery-img lazy">
+            <div class="gallery-overlay">
+              <p>Athletes from six academies gathered for an intensive sports rehabilitation workshop.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="skeleton-box"></div>
+            <img
+              data-src="https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=800&auto=format&fit=crop"
+              alt="Sports injury assessment and functional movement screen for athletes"
+              class="gallery-img lazy">
+            <div class="gallery-overlay">
+              <p>Functional movement screening helping coaches understand their athletes' injury risks.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="skeleton-box"></div>
+            <img
+              data-src="https://images.unsplash.com/photo-1574680178050-55c6a6a96e0a?q=80&w=800&auto=format&fit=crop"
+              alt="F95 physiotherapist demonstrating taping techniques to sports coaches"
+              class="gallery-img lazy">
+            <div class="gallery-overlay">
+              <p>Live demonstration of advanced kinesio-taping techniques for sports injury management.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="skeleton-box"></div>
+            <img
+              data-src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800&auto=format&fit=crop"
+              alt="Interactive Q&A session between F95 experts and sports coaches"
+              class="gallery-img lazy">
+            <div class="gallery-overlay">
+              <p>Interactive session between expert physiotherapists and academy coaches and trainers.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="skeleton-box"></div>
+            <img
+              data-src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=800&auto=format&fit=crop"
+              alt="Athlete undergoing return-to-play assessment using F95 protocols"
+              class="gallery-img lazy">
+            <div class="gallery-overlay">
+              <p>Return-to-play assessment helping athletes safely resume training after sports injuries.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="skeleton-box"></div>
+            <img
+              data-src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop"
+              alt="Award ceremony and certificate distribution at sports rehab workshop"
+              class="gallery-img lazy">
+            <div class="gallery-overlay">
+              <p>Certificate distribution ceremony recognising participants at the sports rehab workshop.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ═══════════════════
+         EVENT 4
+      ═══════════════════ -->
+      <section class="gallery-event reveal" id="event-4" data-event="event-4">
+        <div class="event-header glass-header">
+          <div class="event-header-inner">
+            <div class="event-meta">
+              <span class="event-tag">Event 04</span>
+              <span class="event-year">2025</span>
+            </div>
+            <h2 class="event-title">AI Movement Analysis — Grand Launch</h2>
+            <p class="event-desc">The official launch of F95's AI-driven movement and gait analysis system — the first of its kind in Central India, unveiled to media, patients, and industry professionals.</p>
+            <div class="event-stats">
+              <div class="event-stat"><strong>First</strong> in Central India</div>
+              <div class="event-stat-sep"></div>
+              <div class="event-stat"><strong>Live</strong> Demo Day</div>
+              <div class="event-stat-sep"></div>
+              <div class="event-stat"><strong>100+</strong> Attendees</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-grid">
+
+          <div class="gallery-item">
+            <div class="skeleton-box"></div>
+            <img
+              data-src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop"
+              alt="AI movement analysis system being demonstrated at F95 launch event"
+              class="gallery-img lazy">
+            <div class="gallery-overlay">
+              <p>First public demonstration of AI-powered movement analysis capturing detailed gait patterns.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item gallery-item--tall">
+            <div class="skeleton-box"></div>
+            <img
+              data-src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?q=80&w=800&auto=format&fit=crop"
+              alt="Patient undergoing live AI gait analysis demonstration at launch"
+              class="gallery-img lazy">
+            <div class="gallery-overlay">
+              <p>Patient undergoing live AI gait analysis during the landmark technology launch event.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="skeleton-box"></div>
+            <img
+              data-src="https://images.unsplash.com/photo-1612831455359-970e23a1e4e9?q=80&w=800&auto=format&fit=crop"
+              alt="F95 director presenting the AI analysis technology to media and guests"
+              class="gallery-img lazy">
+            <div class="gallery-overlay">
+              <p>F95 director presenting the groundbreaking AI analysis platform to an enthusiastic audience.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item gallery-item--wide">
+            <div class="skeleton-box"></div>
+            <img
+              data-src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?q=80&w=1200&auto=format&fit=crop"
+              alt="Full team photograph at the AI analysis grand launch event"
+              class="gallery-img lazy">
+            <div class="gallery-overlay">
+              <p>The complete F95 team celebrating the successful launch of AI analysis technology.</p>
+            </div>
+          </div>
+<!--   -->
+   <!--  https://images.unsplash.com/photo-1576669801975-c3e5b3e87d9c?q=80&w=800&auto=format&fit=crop-->
+          <div class="gallery-item">
+            <div class="skeleton-box"></div>
+            <img
+              data-src="https://images.pexels.com/photos/4506168/pexels-photo-4506168.jpeg"
+              alt="Media and industry representatives experiencing AI gait analysis at F95"
+              class="gallery-img lazy">
+            <div class="gallery-overlay">
+              <p>Industry representatives experiencing real-time AI analysis results for the first time.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ═══════════════════
+         EVENT 5
+      ═══════════════════ -->
+      <section class="gallery-event reveal" id="event-5" data-event="event-5">
+        <div class="event-header glass-header">
+          <div class="event-header-inner">
+            <div class="event-meta">
+              <span class="event-tag">Event 05</span>
+              <span class="event-year">2025</span>
+            </div>
+            <h2 class="event-title">Community Outreach &amp; School Programme</h2>
+            <p class="event-desc">F95's school health programme visited over 12 schools across Chhattisgarh, providing posture screenings, ergonomic backpack assessments, and youth wellness education.</p>
+            <div class="event-stats">
+              <div class="event-stat"><strong>2,000+</strong> Students</div>
+              <div class="event-stat-sep"></div>
+              <div class="event-stat"><strong>12</strong> Schools</div>
+              <div class="event-stat-sep"></div>
+              <div class="event-stat"><strong>Free</strong> Programme</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-grid">
+
+          <div class="gallery-item">
+            <div class="skeleton-box"></div>
+            <img
+              data-src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=800&auto=format&fit=crop"
+              alt="F95 physiotherapist educating school students about posture and spine"
+              class="gallery-img lazy">
+            <div class="gallery-overlay">
+              <p>Physiotherapist teaching students about healthy posture and spinal care in school.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="skeleton-box"></div>
+            <img
+              data-src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=800&auto=format&fit=crop"
+              alt="Free posture screening for school children by F95 team"
+              class="gallery-img lazy">
+            <div class="gallery-overlay">
+              <p>Free posture screening catching early signs of scoliosis in young school children.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item gallery-item--wide">
+            <div class="skeleton-box"></div>
+            <img
+              data-src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1200&auto=format&fit=crop"
+              alt="F95 team with school teachers and students at community outreach event"
+              class="gallery-img lazy">
+            <div class="gallery-overlay">
+              <p>F95 team with teachers and students at a successful community outreach programme event.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="skeleton-box"></div>
+            <img
+              data-src="https://images.unsplash.com/photo-1510936111840-65e151ad71bb?q=80&w=800&auto=format&fit=crop"
+              alt="Ergonomic backpack assessment for students at F95 outreach visit"
+              class="gallery-img lazy">
+            <div class="gallery-overlay">
+              <p>Ergonomic backpack assessment reducing spinal load risk for hundreds of schoolchildren.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="skeleton-box"></div>
+            <img
+              data-src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop"
+              alt="Group wellness activity conducted by F95 at school outreach programme"
+              class="gallery-img lazy">
+            <div class="gallery-overlay">
+              <p>Group wellness activities teaching students the importance of daily exercise habits.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <div class="skeleton-box"></div>
+            <img
+              data-src="https://images.unsplash.com/photo-1529390079861-591de354faf5?q=80&w=800&auto=format&fit=crop"
+              alt="F95 therapist giving health awards and certificates to school students"
+              class="gallery-img lazy">
+            <div class="gallery-overlay">
+              <p>Celebrating students who completed the junior wellness ambassador training programme.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main><!-- /gallery-main -->
+  </div><!-- /gallery-layout -->
+
+  <!-- ════════════════════════════════════════
+     STORY BOX — Full-width CTA above footer
+     Always visible on all screen sizes
+  ════════════════════════════════════════ -->
+  <div class="gallery-story-box">
+    <div class="gallery-story-box-inner">
+      <div class="story-box-content">
+        <div class="story-box-eyebrow">F95 Community</div>
+        <p class="story-box-question">Want to be part of <em>our story</em>?</p>
+        <p class="story-box-sub">Join thousands of patients, athletes, and community members who have experienced the F95 difference firsthand.</p>
+      </div>
+      <div class="story-box-actions">
+        <a href="contact.html" class="btn btn-primary">Get Started →</a>
+        <a href="index.html" class="btn btn-secondary-outline">Learn More</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════
+     FOOTER — identical to index.html
+  ════════════════════════════════════════ -->
+  <footer>
+    <div class="max-w">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo-block">
+            <div class="footer-logo-circle"></div>
+            <div>
+              <div class="footer-name">F95 Advance Physiotherapy<br>&amp; Research Centre</div>
+              <div class="footer-kym">Keeps You Moving</div>
+            </div>
+          </div>
+          <p class="footer-desc">Chhattisgarh's most comprehensive physiotherapy network. AI-driven diagnostics,
+            evidence-based treatment, and a commitment to finding the root cause of your pain.</p>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Pages</div>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="analysis.html">Diagnostics</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Our Clinics</div>
+          <ul class="footer-links">
+            <li><a href="index.html#locations">Magneto Mall, Raipur</a></li>
+            <li><a href="index.html#locations">GE Road, Raipur</a></li>
+            <li><a href="index.html#locations">Bilaspur</a></li>
+            <li><a href="index.html#locations">Plant Centres</a></li>
+            <li><a href="index.html#locations">Sports Academies</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Contact</div>
+          <ul class="footer-links">
+            <li><a href="tel:+919039283727">+91 90392 83727</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html">Walk-in Welcome</a></li>
+          </ul>
+          <div class="footer-contact-block partner-section">
+            <span class="partner-text">A Unit of</span>
+            <div class="partner-logo-container">
+              <img src="/Images/hira-csr-logo.png" alt="HIRA CSR Foundation" class="partner-logo">
+            </div>
+          </div>
+        </div>
+      </div>
+
+     <!-- ── SOCIAL MEDIA STRIP ─────────────────────────────────────
+         Icons are monochrome (rgba white) at rest.
+         Each platform transitions to its official brand colour on hover.
+         All links open in a new tab with rel="noopener noreferrer".
+         Replace the href="#" placeholders with your live profile URLs.
+    ────────────────────────────────────────────────────────────── -->
+      <div class="footer-social" role="navigation" aria-label="Follow us on social media">
+
+        <span class="footer-social-label">Follow Us</span>
+
+        <div class="footer-social-icons">
+
+          <!-- ── Facebook ── Brand colour on hover: #1877F2 ── -->
+          <a class="footer-social-link footer-social-link--facebook" href="#" target="_blank" rel="noopener noreferrer"
+            aria-label="Follow F95 on Facebook" title="Facebook">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- Official Facebook 'f' mark -->
+              <path
+                d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.791-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.267h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z" />
+            </svg>
+          </a>
+
+          <!-- ── X (formerly Twitter) ── Brand colour on hover: #000000 ── -->
+          <a class="footer-social-link footer-social-link--x" href="#" target="_blank" rel="noopener noreferrer"
+            aria-label="Follow F95 on X (formerly Twitter)" title="X (Twitter)">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- Official X / Twitter logo (2023) -->
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.747l7.73-8.835L1.254 2.25H8.08l4.259 5.63 5.905-5.63zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+          </a>
+
+          <!-- ── Instagram ── Brand colour on hover: gradient ── -->
+          <a class="footer-social-link footer-social-link--instagram" href="#" target="_blank" rel="noopener noreferrer"
+            aria-label="Follow F95 on Instagram" title="Instagram">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- Official Instagram camera glyph -->
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg>
+          </a>
+
+          <!-- ── YouTube ── Brand colour on hover: #FF0000 ── -->
+          <a class="footer-social-link footer-social-link--youtube" href="#" target="_blank" rel="noopener noreferrer"
+            aria-label="Watch F95 on YouTube" title="YouTube">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- Official YouTube play-in-rect mark -->
+              <path
+                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+            </svg>
+          </a>
+
+          <!-- ── LinkedIn ── Brand colour on hover: #0A66C2 ── -->
+          <a class="footer-social-link footer-social-link--linkedin" href="#" target="_blank" rel="noopener noreferrer"
+            aria-label="Connect with F95 on LinkedIn" title="LinkedIn">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- Official LinkedIn 'in' mark -->
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+
+        </div><!-- /.footer-social-icons -->
+      </div><!-- /.footer-social -->
+
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2025 F95 Advance Physiotherapy &amp; Research Centre. All rights reserved.</div>
+        <div class="footer-hira">Unit of <span>HIRA</span> CSR Foundation</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky Contact Button -->
+  <a href="contact.html" class="sticky-contact" id="stickyBtn">
+    <div class="dot"></div>
+    Contact Us
+  </a>
+
+  <!-- ════════════════════════════════════════
+     SCRIPTS
+  ════════════════════════════════════════ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+  <script src="indexScript.js"></script>
+  <script src="Script/galleryScript.js"></script>
+  <!-- Standard Preloader: Preloader Animation 2 Seconds Delay (separate file for easy maintenance) -->  
+  <script src="preloader.js"></script>
+</body>
+</html>

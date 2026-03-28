@@ -1,0 +1,192 @@
+/* ═══════════════════════════════════════════════════════════════
+   FOOTER — Social Media Component  |  footer.css
+   F95 Advance Physiotherapy & Research Centre
+   Drop-in addition to the main stylesheet.
+   Integrates with the existing CSS design system variables.
+   ═══════════════════════════════════════════════════════════════ */
+
+
+/* ────────────────────────────────────────────────────────────────
+   SOCIAL STRIP WRAPPER
+   Sits between .footer-grid and .footer-bottom.
+   A subtle top/bottom rule visually separates it from both.
+──────────────────────────────────────────────────────────────── */
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 36px 0 32px;
+  border-top:    1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 28px;
+}
+
+/* ── Eyebrow label ── */
+.footer-social-label {
+  font-family:     'Nunito', sans-serif;
+  font-size:       0.68rem;
+  font-weight:     800;
+  text-transform:  uppercase;
+  letter-spacing:  0.14em;
+  color:           rgba(255, 255, 255, 0.30);
+}
+
+/* ── Icon row ── */
+.footer-social-icons {
+  display:     flex;
+  align-items: center;
+  gap:         14px;
+  flex-wrap:   wrap;
+  justify-content: center;
+}
+
+
+/* ────────────────────────────────────────────────────────────────
+   BASE ICON LINK
+   Monochrome pill at rest; brand colour on hover.
+──────────────────────────────────────────────────────────────── */
+.footer-social-link {
+  display:         inline-flex;
+  align-items:     center;
+  justify-content: center;
+  width:           48px;
+  height:          48px;
+  border-radius:   50%;
+  background:      rgba(255, 255, 255, 0.07);
+  border:          1px solid rgba(255, 255, 255, 0.12);
+  color:           rgba(255, 255, 255, 0.55);   /* icon fill at rest */
+
+  /* Smooth spring-like pop on hover */
+  transition:
+    background  0.30s ease,
+    border-color 0.30s ease,
+    color       0.30s ease,
+    transform   0.32s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow  0.30s ease;
+}
+
+/* SVG inherits the link's color */
+.footer-social-link svg {
+  width:  20px;
+  height: 20px;
+  fill:   currentColor;
+  display: block;
+  flex-shrink: 0;
+}
+
+/* Shared hover base */
+.footer-social-link:hover {
+  color:     #ffffff;
+  transform: translateY(-5px) scale(1.12);
+}
+
+
+/* ────────────────────────────────────────────────────────────────
+   PER-PLATFORM BRAND COLOURS ON HOVER
+   Official brand hex values — do not alter.
+──────────────────────────────────────────────────────────────── */
+
+/* Facebook — #1877F2 */
+.footer-social-link--facebook:hover {
+  background:   #1877F2;
+  border-color: #1877F2;
+  box-shadow:   0 8px 24px rgba(24, 119, 242, 0.45);
+}
+
+/* X (formerly Twitter) — #000000 with a white border so it reads on navy */
+.footer-social-link--x:hover {
+  background:   #000000;
+  border-color: rgba(255, 255, 255, 0.25);
+  box-shadow:   0 8px 24px rgba(0, 0, 0, 0.55);
+}
+
+/* Instagram — brand gradient */
+.footer-social-link--instagram:hover {
+  background: radial-gradient(
+    circle at 30% 110%,
+    #FFD676 0%,
+    #FF6437 30%,
+    #EB3483 55%,
+    #A537A8 75%,
+    #4D56D4 100%
+  );
+  border-color: transparent;
+  box-shadow: 0 8px 24px rgba(235, 52, 131, 0.45);
+}
+
+/* YouTube — #FF0000 */
+.footer-social-link--youtube:hover {
+  background:   #FF0000;
+  border-color: #FF0000;
+  box-shadow:   0 8px 24px rgba(255, 0, 0, 0.40);
+}
+
+/* LinkedIn — #0A66C2 */
+.footer-social-link--linkedin:hover {
+  background:   #0A66C2;
+  border-color: #0A66C2;
+  box-shadow:   0 8px 24px rgba(10, 102, 194, 0.45);
+}
+
+
+/* ────────────────────────────────────────────────────────────────
+   ACCESSIBILITY — focus-visible ring
+   Matches the site's --blue accent for keyboard users.
+──────────────────────────────────────────────────────────────── */
+.footer-social-link:focus-visible {
+  outline:        2px solid var(--blue, #00AEEF);
+  outline-offset: 3px;
+}
+
+
+/* ────────────────────────────────────────────────────────────────
+   RESPONSIVE ADJUSTMENTS
+──────────────────────────────────────────────────────────────── */
+
+/* Tablet: tighten gap slightly */
+@media (max-width: 768px) {
+  .footer-social {
+    padding: 28px 0 24px;
+    gap:     16px;
+  }
+  .footer-social-icons {
+    gap: 12px;
+  }
+}
+
+/* Mobile: allow icons to wrap naturally with tighter sizing */
+@media (max-width: 480px) {
+  .footer-social-link {
+    width:  44px;
+    height: 44px;
+  }
+  .footer-social-link svg {
+    width:  18px;
+    height: 18px;
+  }
+}
+
+
+/* ────────────────────────────────────────────────────────────────
+   RESPONSIVE: existing footer-grid (carried over for completeness)
+   These rules ensure the full footer stacks cleanly on mobile.
+──────────────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 560px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+}
