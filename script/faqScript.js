@@ -14,7 +14,7 @@
   'use strict';
 
   /* ── 1. Data fetch ─────────────────────────────────────── */
-  const FAQ_URL = '../Assets/faq.json';
+  const FAQ_URL = '../assets/faq.json';
 
   async function loadFAQ() {
     try {

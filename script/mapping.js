@@ -17,7 +17,7 @@
   'use strict';
 
   /* ── Config ─────────────────────────────────────── */
-  const BRANCHES_JSON  = '../Script/branches.json';   /* path relative to contact.html */
+  const BRANCHES_JSON  = '../script/branches.json';   /* path relative to contact.html */
   const DEFAULT_BRANCH = 1;                 /* id of the branch shown on page load */
   const MAP_ZOOM_DEFAULT = 11;              /* zoom when showing the default branch */
   const MAP_ZOOM_FLY     = 14;             /* zoom when flying to a selected branch */

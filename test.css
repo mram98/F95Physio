@@ -222,7 +222,7 @@ nav.scrolled {
   flex-shrink: 0;
   
   overflow: hidden;
-  background-image: url('/Images/f95-logo.png');
+  background-image: url('/images/f95-logo.png');
   background-size: 200%;        /* zoom level — adjust this */
   background-position: center;  /* keeps it centered */
   background-repeat: no-repeat;
@@ -1548,7 +1548,7 @@ footer {
   flex-shrink: 0;
   
   overflow: hidden;
-  background-image: url('/Images/f95-logo.png');
+  background-image: url('/images/f95-logo.png');
   background-size: 200%;        /* zoom level — adjust this */
   background-position: center;  /* keeps it centered */
   background-repeat: no-repeat;
