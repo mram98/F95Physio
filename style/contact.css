@@ -1194,3 +1194,28 @@
     justify-content: center;
   }
 }
+
+
+/* location note */
+.location-footer-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 36px;
+  padding: 18px 22px;
+  background: var(--white);
+  border-radius: var(--radius);
+  border: 1px solid var(--gray-line);
+}
+
+.location-note-icon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  line-height: 1.5;
+}
+
+.location-footer-note p {
+  font-size: 0.85rem;
+  color: var(--warm-text);
+  line-height: 1.65;
+}
