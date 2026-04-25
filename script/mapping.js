@@ -127,26 +127,41 @@
     const select = document.getElementById('branch-select');
     if (!select) return;
 
-    select.innerHTML = '';  /* clear loading placeholder */
+    select.innerHTML = ''; /* clear loading placeholder */
 
-    /* Group: Main Centres */
+    /* 1. Define the groups */
     const mainGroup = document.createElement('optgroup');
     mainGroup.label = '🏥 Main Centres';
+    
     const plantGroup = document.createElement('optgroup');
     plantGroup.label = '🏭 Industrial Plant Centres';
+    
+    const sportGroup = document.createElement('optgroup');
+    sportGroup.label = '⚽ Sports & Academies';
 
+    /* 2. Distribute branches into groups */
     branches.forEach(branch => {
-      const opt       = document.createElement('option');
-      opt.value       = String(branch.id);
+      const opt = document.createElement('option');
+      opt.value = String(branch.id);
       opt.textContent = branch.shortName;
-      if (branch.type === 'main') mainGroup.appendChild(opt);
-      else                         plantGroup.appendChild(opt);
+
+      // Logic to decide which group the option belongs to
+      if (branch.type === 'main') {
+        mainGroup.appendChild(opt);
+      } else if (branch.type === 'sport') {
+        sportGroup.appendChild(opt);
+      } else {
+        // Default to plant group for 'plant' or undefined types
+        plantGroup.appendChild(opt);
+      }
     });
 
-    select.appendChild(mainGroup);
-    select.appendChild(plantGroup);
+    /* 3. Only append groups that have children (options) */
+    if (mainGroup.children.length > 0) select.appendChild(mainGroup);
+    if (plantGroup.children.length > 0) select.appendChild(plantGroup);
+    if (sportGroup.children.length > 0) select.appendChild(sportGroup);
 
-    /* Set default selection */
+    /* 4. Set default selection */
     select.value = String(DEFAULT_BRANCH);
   }
 

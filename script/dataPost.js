@@ -1,6 +1,6 @@
 // --- CONFIGURATION ---
 // Paste the URL you got after deploying your Google Apps Script
-const scriptURL = 'https://script.google.com/macros/s/AKfycbyU-7mlxZr187kpcjupR6PdcDQwJGhJN4QYQ98hNOkkY4QTz2WOCRZctaDjWH68KbPq/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycby058lUswzAAyvomL_nfXR_Sc2c4YgeFamCqJfUmwnyCVpMi9ddvOtL8gaEJen-Yy6n/exec';
 
 // This MUST match the SECRET_TOKEN variable in your Google Apps Script
 const SECRET_TOKEN = "__SECRET_TOKEN_PLACEHOLDER__";
